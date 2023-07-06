@@ -1,0 +1,73 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Public Sans", sans-serif;
+  font-size: $font-med;
+  color: $grayishblue;
+  font-weight: 300;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+//flexbox style
+.flex {
+  display: flex;
+
+  &-jc-c {
+    //class: flex-jc-c
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    //class: flex-jc-sb
+    justify-content: space-between;
+  }
+
+  &-a-it-c {
+    //class: align items center
+    align-items: center;
+  }
+}
+
+//button
+.button {
+  padding: 1rem 1.875rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, $limegreen, $brightcyan);
+  color: $white;
+  font-weight: 400;
+}
+
+//visibility
+.hide-for-mobile {
+  //hide for tablet and mobile
+  //put the class to the header links and button+
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  //hide for desktop viewport widths
+  //put the class to the hamburger menu
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
