@@ -46,13 +46,18 @@ a:hover {
 
 //button
 .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   cursor: pointer;
   border: none;
   background: linear-gradient(to right, $limegreen, $brightcyan);
   color: $white;
   font-weight: 400;
+  transition: 0.3s;
+
+  &:active {
+    transform: translate(1px, 1.5px);
+  }
 }
 
 //visibility

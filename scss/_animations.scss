@@ -1,0 +1,43 @@
+//usare @keyframes
+@keyframes fade-in {
+  //define keyframes' name
+  from {
+    //start point
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    //ending point
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  //define keyframes' name
+  from {
+    //start point
+    visibility: visible;
+    opacity: 1;
+  }
+  99%{
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    //ending point
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
+}
