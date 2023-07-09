@@ -1,4 +1,9 @@
 //usare @keyframes
+
+.has-fade {
+  visibility: hidden;
+}
+
 @keyframes fade-in {
   //define keyframes' name
   from {
@@ -12,12 +17,13 @@
   }
   to {
     //ending point
+    visibility: visible;
     opacity: 1;
   }
 }
 
 .fade-in {
-  animation: fade-in 300ms ease-in-out forwards;
+  animation: fade-in 200ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -27,7 +33,7 @@
     visibility: visible;
     opacity: 1;
   }
-  99%{
+  99% {
     visibility: visible;
     opacity: 0;
   }
@@ -39,5 +45,5 @@
 }
 
 .fade-out {
-  animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-out 200ms ease-in-out forwards;
 }

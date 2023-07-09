@@ -16,12 +16,23 @@ body {
   font-size: $font-med;
   color: $grayishblue;
   font-weight: 300;
+
+  &.no-scroll {
+    overflow: hidden; //bloccare lo scroll dello schermo quando il menu e' aperto
+  }
 }
 
 a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+//spacing
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
 }
 
 //flexbox style
@@ -46,7 +57,7 @@ a:hover {
 
 //button
 .button {
-  padding: 0.875rem 2.1875rem;
+  padding: 0.875rem 1.0875rem;
   border-radius: 50px;
   cursor: pointer;
   border: none;
