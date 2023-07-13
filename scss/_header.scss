@@ -43,10 +43,10 @@
     > span {
       display: block;
       width: 26px;
-      height: 2.6px;
+      height: 1.3px;
       background-color: $darkblue;
       transition: all 300ms ease-in-out;
-      transform-origin: 2px 2px;
+      transform-origin: 4px 1px;
 
       &:not(:last-child) {
         margin-bottom: 5px;
@@ -73,7 +73,7 @@
 
   &__link {
     a {
-      font-size: $font-small;
+      font-size: $font-med;
       color: $grayishblue;
       position: relative;
       transition: color 300ms ease-in-out;
@@ -94,23 +94,6 @@
         background: linear-gradient(to right, $limegreen, $brightcyan);
         opacity: 0;
         transition: opacity 300ms ease-in-out;
-      }
-
-      &:hover {
-        color: $darkblue;
-        &::before {
-          opacity: 1;
-        }
-      }
-
-      &__cta {
-        font-size: $font-small;
-        color: $white;
-        transition: opacity 300ms ease-in-out;
-
-        &:hover {
-          opacity: 0.75;
-        }
       }
     }
   }
